@@ -1,43 +1,47 @@
-/* -----------------------------------------
-  Have focus outline only for keyboard users 
- ---------------------------------------- */
+const filterGroup = document.querySelector('.filters');
+const filters = document.querySelectorAll('[data-filter]');
+const projects = document.querySelectorAll('.project');
+const projectCount = document.querySelector('.project-count');
 
-const handleFirstTab = (e) => {
-  if(e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing')
-
-    window.removeEventListener('keydown', handleFirstTab)
-    window.addEventListener('mousedown', handleMouseDownOnce)
-  }
-
+if (filterGroup && projectCount) {
+  filterGroup.hidden = false;
+  filters.forEach((button) => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.filter;
+      let visible = 0;
+      projects.forEach((project) => {
+        project.hidden = category !== 'all' && project.dataset.category !== category;
+        if (!project.hidden) visible += 1;
+      });
+      filters.forEach((filter) => {
+        const selected = filter === button;
+        filter.classList.toggle('is-active', selected);
+        filter.setAttribute('aria-pressed', String(selected));
+      });
+      projectCount.textContent = `${visible} ${visible === 1 ? 'project' : 'projects'}`;
+    });
+  });
 }
 
-const handleMouseDownOnce = () => {
-  document.body.classList.remove('user-is-tabbing')
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
 
-  window.removeEventListener('mousedown', handleMouseDownOnce)
-  window.addEventListener('keydown', handleFirstTab)
+const navLinks = document.querySelectorAll('.nav-links a');
+if ('IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const link = [...navLinks].find((item) => item.getAttribute('href') === `#${entry.target.id}`);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navLinks.forEach((item) => item.removeAttribute('aria-current'));
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  navLinks.forEach((link) => {
+    const section = document.querySelector(link.getAttribute('href'));
+    if (section) sectionObserver.observe(section);
+  });
 }
-
-window.addEventListener('keydown', handleFirstTab)
-
-const backToTopButton = document.querySelector(".back-to-top");
-let isBackToTopRendered = false;
-
-let alterStyles = (isBackToTopRendered) => {
-  backToTopButton.style.visibility = isBackToTopRendered ? "visible" : "hidden";
-  backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
-  backToTopButton.style.transform = isBackToTopRendered
-    ? "scale(1)"
-    : "scale(0)";
-};
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 700) {
-    isBackToTopRendered = true;
-    alterStyles(isBackToTopRendered);
-  } else {
-    isBackToTopRendered = false;
-    alterStyles(isBackToTopRendered);
-  }
-});

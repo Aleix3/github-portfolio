@@ -1,244 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-    <title>Aleix Botella | Junior Game Developer</title>
-
-    <meta name="description" content="Video game development graduate focused on Unity and C#, with programming internship experience and published mobile puzzle games.">
-    <meta name="keywords" content="Unity, C++, C#, ZBrush, Maya, Videogames, CITM, UPC, GameDev" />
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141713" />
+  <title>Aleix Botella | Game Developer</title>
+  <meta name="description" content="Aleix Botella, junior game developer focused on Unity and C#. Explore PC games, published mobile puzzles, and augmented reality projects." />
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <link rel="preload" href="./fonts/Jost-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="./index.css" />
+  <script src="./index.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Aleix Botella, home"><span class="brand-mark" aria-hidden="true">ab<span>.</span></span><span class="brand-name">ALEIX BOTELLA<span>GAME DEVELOPER</span></span></a>
+      <div class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a></div>
+      <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> JUNIOR GAME DEVELOPER · BARCELONA</p>
+        <h1 id="hero-title">Code. Create.<br /><span>Press play.</span></h1>
+        <p class="hero-intro">I’m Aleix. I bring games to life through code — from card-slinging adventures to pocket-sized puzzles.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="./CV.pdf" download="Aleix_Botella_Llobet_CV.pdf">Download CV <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-footnote"><span>UNITY &amp; C#</span><span>PC / MOBILE / AR</span></div>
+      </div>
+      <div class="hero-feature">
+        <div class="feature-heading"><span><span class="dot"></span> CURRENTLY BUILDING</span><span>01 / SHODOE</span></div>
+        <a class="hero-art" href="https://southwest-studio.itch.io/shodoe" target="_blank" rel="noopener noreferrer" aria-label="Explore Shodoe on itch.io (opens in a new tab)">
+          <img src="./images/shodoe.png" alt="Shodoe: a fox Yokai faces the player's hand of cards in a Japanese-inspired room" width="794" height="446" fetchpriority="high" />
+          <span class="hero-art-link" aria-hidden="true">Enter the world <span>↗</span></span>
+        </a>
+        <div class="feature-caption"><div><h2>Shodoe</h2><p>Cards, Yokai &amp; a team of eight.</p></div><span class="feature-tag">PC · ROGUELITE</span></div>
+      </div>
+    </section>
+    <div class="highlights shell" aria-label="Experience at a glance"><p><strong>06</strong><span>selected projects</span></p><p><strong>02</strong><span>mobile games published</span></p><p><strong>06<span> mo.</span></strong><span>programming internship</span></p><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
 
-    <!-- ***** Header ***** -->
-    <header class="header" role="banner" id="top">
-        <div class="row">
-            <nav class="nav" role="navigation">
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__text-box row">
-            <div class="header__text">
-                <h1 class="heading-primary">
-                    <span>Aleix Botella</span>
-                </h1>
-                <p>Junior Game Developer | Unity &amp; C# | CITM (UPC) Graduate</p>
-                <a href="#contact" class="btn btn--pink">Contact Me</a>
-            </div>
-        </div>
-    </header>
+    <section class="work section shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">A few worlds<br />I’ve helped build<span class="accent">.</span></h2></div><p>Different platforms. Different challenges.<br />The same love for making things playable.</p></div>
+      <div class="work-toolbar"><div class="filters" role="group" aria-label="Filter projects by platform" hidden><button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button><button class="filter" type="button" data-filter="pc" aria-pressed="false">PC <span>03</span></button><button class="filter" type="button" data-filter="mobile" aria-pressed="false">Mobile <span>02</span></button><button class="filter" type="button" data-filter="ar" aria-pressed="false">AR <span>01</span></button></div><p class="project-count" aria-live="polite" aria-atomic="true">6 projects</p></div>
+      <div class="projects-grid"><article class="project" data-category="pc" aria-labelledby="project-1">
+        <a class="project-visual project-visual--1" href="https://southwest-studio.itch.io/shodoe" target="_blank" rel="noopener noreferrer" aria-label="Explore on itch.io: Shodoe (opens in a new tab)">
+          <img src="./images/shodoe.png" class="project-image" alt="Shodoe gameplay showing a fox Yokai and a hand of cards" width="794" height="446" loading="lazy" decoding="async" /><span class="image-label"><span class="dot"></span> In development</span><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>PC · DECKBUILDER ROGUELITE</span><span>01</span></div>
+        <h3 id="project-1">Shodoe</h3>
+        <p class="project-role">Programmer</p>
+        <p class="project-description">Slash Yokai with cards in a Japanese-inspired roguelite. Built with a team of eight, with support from the GameBCN pre-incubation programme.</p>
+        <a class="text-link" href="https://southwest-studio.itch.io/shodoe" target="_blank" rel="noopener noreferrer">Explore on itch.io<span aria-hidden="true">↗</span></a>
+      </article>
+<article class="project" data-category="pc" aria-labelledby="project-2">
+        <a class="project-visual project-visual--2" href="https://github.com/Aleix3/Suregs-Masks-Remake" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub: Süreg’s Masks Remake (opens in a new tab)">
+          <img src="./images/suregs-masks-remake.png" class="project-image" alt="Süreg’s Masks Remake artwork showing a character approaching a glowing forest cave" width="2858" height="1639" loading="lazy" decoding="async" /><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>PC · ISOMETRIC RPG</span><span>02</span></div>
+        <h3 id="project-2">Süreg’s Masks Remake</h3>
+        <p class="project-role">Solo developer · Bachelor’s thesis</p>
+        <p class="project-description">A complete solo remake of our CITM team project. A 2D isometric RPG, developed as my final degree project.</p>
+        <a class="text-link" href="https://github.com/Aleix3/Suregs-Masks-Remake" target="_blank" rel="noopener noreferrer">View on GitHub<span aria-hidden="true">↗</span></a>
+      </article>
+<article class="project" data-category="mobile" aria-labelledby="project-3">
+        <a class="project-visual project-visual--3" href="https://play.google.com/store/apps/details?id=com.pocketlabs.slimesort&amp;hl=es_419" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play: SlimeSort (opens in a new tab)">
+          <img src="./images/slimesort.png" class="project-image" alt="SlimeSort artwork with colorful slimes and color-sorting tubes" width="1080" height="1920" loading="lazy" decoding="async" /><span class="image-label">On Google Play ↗</span><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>MOBILE · PUZZLE</span><span>03</span></div>
+        <h3 id="project-3">SlimeSort</h3>
+        <p class="project-role">Sole programmer</p>
+        <p class="project-description">A colorful mobile puzzle game. I was responsible for all game programming, from development through its Google Play release.</p>
+        <a class="text-link" href="https://play.google.com/store/apps/details?id=com.pocketlabs.slimesort&amp;hl=es_419" target="_blank" rel="noopener noreferrer">Get it on Google Play<span aria-hidden="true">↗</span></a>
+      </article>
+<article class="project" data-category="mobile" aria-labelledby="project-4">
+        <a class="project-visual project-visual--4" href="https://play.google.com/store/apps/details?id=com.pocketlabs.capidoku&amp;hl=es_419" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play: CapiDoku (opens in a new tab)">
+          <img src="./images/capidoku.png" class="project-image" alt="CapiDoku artwork with a capybara and puzzle tiles beside a waterfall" width="832" height="406" loading="lazy" decoding="async" /><span class="image-label">On Google Play ↗</span><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>MOBILE · PUZZLE</span><span>04</span></div>
+        <h3 id="project-4">CapiDoku</h3>
+        <p class="project-role">Sole programmer</p>
+        <p class="project-description">A cozy mobile puzzle game. I was responsible for all game programming, with the finished game published on Google Play.</p>
+        <a class="text-link" href="https://play.google.com/store/apps/details?id=com.pocketlabs.capidoku&amp;hl=es_419" target="_blank" rel="noopener noreferrer">Get it on Google Play<span aria-hidden="true">↗</span></a>
+      </article>
+<article class="project" data-category="pc" aria-labelledby="project-5">
+        <a class="project-visual project-visual--5" href="https://github.com/Burned-Games/W40K-TLM" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub: Warhammer 40,000: The Last Marine (opens in a new tab)">
+          <img src="./images/w40k.png" class="project-image" alt="Warhammer 40,000: The Last Marine" width="1920" height="1080" loading="lazy" decoding="async" /><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>PC · ACTION RPG</span><span>05</span></div>
+        <h3 id="project-5">Warhammer 40,000: The Last Marine</h3>
+        <p class="project-role">Player programmer</p>
+        <p class="project-description">A Diablo-like team project simulating AAA production at CITM. I worked on player programming using a custom engine and Lua.</p>
+        <a class="text-link" href="https://github.com/Burned-Games/W40K-TLM" target="_blank" rel="noopener noreferrer">View on GitHub<span aria-hidden="true">↗</span></a>
+      </article>
+<article class="project" data-category="ar" aria-labelledby="project-6">
+        <a class="project-visual project-visual--6" href="https://github.com/SouthWest-Studios/South_AR_Project/releases/tag/1.0" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub: BOOGLIGAN (opens in a new tab)">
+          <img src="./images/boogligan.png" class="project-image" alt="BOOGLIGAN augmented reality game" width="800" height="600" loading="lazy" decoding="async" /><span class="image-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-meta"><span>AUGMENTED REALITY</span><span>06</span></div>
+        <h3 id="project-6">BOOGLIGAN</h3>
+        <p class="project-role">Enemy programmer</p>
+        <p class="project-description">An augmented reality game developed at CITM. My focus was enemy programming in Unity and C#.</p>
+        <a class="text-link" href="https://github.com/SouthWest-Studios/South_AR_Project/releases/tag/1.0" target="_blank" rel="noopener noreferrer">View on GitHub<span aria-hidden="true">↗</span></a>
+      </article></div>
+    </section>
 
-    <main role="main">
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="shell experience-layout">
+        <div class="experience-copy"><p class="eyebrow">02 / PROFESSIONAL EXPERIENCE</p><h2 id="experience-title">Small games.<br /><span class="muted-heading">Real-world rewards.</span></h2><div class="experience-title"><h3>SkillBack</h3><span>6-MONTH INTERNSHIP</span></div><p class="experience-role">Programmer Intern</p><p>I worked on a mobile app connecting skill-based minigames with local businesses. Players could earn Smart Purchase Rights (DCI), redeemable at partner restaurants and retailers.</p><p>My role focused on programming within a platform designed to help businesses attract customers and encourage repeat visits.</p><ul class="tags" aria-label="Experience areas"><li>Mobile development</li><li>Minigames</li><li>Programming</li></ul><p class="experience-note">Development project · Not publicly released</p></div>
+        <div class="experience-visual"><span class="visual-note">PLAY. EARN. REPEAT.</span><div class="phone"><img src="./images/skillback.png" alt="SkillBack home screen with a customizable fox avatar and minigame navigation" width="916" height="2048" loading="lazy" decoding="async" /></div><span class="visual-caption">A little play, beyond the screen.</span></div>
+      </div>
+    </section>
 
-        <!-- ***** Projects ***** -->
-        <section class="work" id="work">
-            <div class="row">
-                <h2>Selected Projects</h2>
-                <div class="work__boxes">
+    <section class="about section shell" id="about" aria-labelledby="about-title">
+      <div class="about-copy"><p class="eyebrow">03 / THE DEVELOPER BEHIND THE GAMES</p><h2 id="about-title">Hi, I’m Aleix<span class="accent">.</span></h2><p class="about-lead">A game development graduate who enjoys turning ideas into interactive experiences.</p><p>I studied Video Game Design and Development at CITM, Universitat Politècnica de Catalunya. My focus is game programming with Unity and C#, across team productions and independent projects.</p><p>From an eight-person team on Shodoe to programming two published mobile games, I enjoy both the collaboration and the craft of building a game.</p><a class="text-link" href="./CV.pdf" download="Aleix_Botella_Llobet_CV.pdf">Get the full CV <span aria-hidden="true">↗</span></a><div class="languages"><span>CAT <small>Native</small></span><span>ES <small>C2</small></span><span>EN <small>B2 · First Certificate</small></span></div></div>
+      <div class="skills"><p class="eyebrow">MY TOOLKIT</p><div class="skill-group"><span class="skill-number">01</span><div><h3>Game programming</h3><p>Unity · C# · C++ · C · Lua · SDL<br />Object-oriented programming</p></div></div><div class="skill-group"><span class="skill-number">02</span><div><h3>Mobile monetization</h3><p>In-app purchases · Advertising<br />Rewarded ads</p></div></div><div class="skill-group"><span class="skill-number">03</span><div><h3>Beyond the code</h3><p>Python · Maya · ZBrush</p></div></div><div class="education"><span aria-hidden="true">↗</span><p>Video Game Design &amp; Development<span>CITM · Universitat Politècnica de Catalunya</span></p></div></div>
+    </section>
 
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>Shodoe</h3>
-                            <p class="work__role">Programmer · Ongoing, over 1 year</p>
-                            <p>A PC deckbuilder roguelite with a Japanese aesthetic, using cards to slash Yokai. Developed in a team of eight and currently supported by the GameBCN pre-incubation programme.</p>
-                            <ul class="work__list">
-                                <li>PC</li>
-                                <li>Deckbuilder roguelite</li>
-                                <li>Team of eight</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://southwest-studio.itch.io/shodoe" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    View on itch.io <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/shodoe.png" class="work__image" alt="Shodoe gameplay showing a fox Yokai and a hand of cards" width="794" height="446" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>Süreg’s Masks Remake</h3>
-                            <p class="work__role">Solo Developer · Bachelor’s Thesis</p>
-                            <p>Developed entirely as my final degree project (TFG). A remake of Süreg’s Mask, a 2D isometric RPG originally created as a team project for the Project II course at CITM.</p>
-                            <ul class="work__list">
-                                <li>Solo development</li>
-                                <li>2D isometric RPG</li>
-                                <li>Bachelor’s thesis</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://github.com/Aleix3/Suregs-Masks-Remake" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    View on GitHub <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/suregs-masks-remake.png" class="work__image" alt="Süreg’s Masks Remake artwork showing a character approaching a glowing forest cave" width="2858" height="1639" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>SlimeSort</h3>
-                            <p class="work__role">Sole Programmer · Published on Google Play</p>
-                            <p>A mobile puzzle game published on Google Play. Responsible for all game programming.</p>
-                            <ul class="work__list">
-                                <li>Mobile</li>
-                                <li>Puzzle</li>
-                                <li>Game programming</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://play.google.com/store/apps/details?id=com.pocketlabs.slimesort&amp;hl=es_419" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    Get it on Google Play <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/slimesort.png" class="work__image work__image--portrait" alt="SlimeSort artwork with colorful slimes and color-sorting tubes" width="1080" height="1920" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>CapiDoku</h3>
-                            <p class="work__role">Sole Programmer · Published on Google Play</p>
-                            <p>A mobile puzzle game published on Google Play. Responsible for all game programming.</p>
-                            <ul class="work__list">
-                                <li>Mobile</li>
-                                <li>Puzzle</li>
-                                <li>Game programming</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://play.google.com/store/apps/details?id=com.pocketlabs.capidoku&amp;hl=es_419" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    Get it on Google Play <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/capidoku.png" class="work__image" alt="CapiDoku artwork with a capybara and puzzle tiles beside a waterfall" width="832" height="406" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>Warhammer 40,000: The Last Marine</h3>
-                            <p class="work__role">Player Programmer</p>
-                            <p>A Diablo-like game developed at CITM as a team project simulating AAA production. Responsible for player programming.</p>
-                            <ul class="work__list">
-                                <li>Custom engine</li>
-                                <li>Lua</li>
-                                <li>Player programming</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://github.com/Burned-Games/W40K-TLM" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    View on GitHub <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/w40k.png" class="work__image" alt="Warhammer 40,000: The Last Marine" width="1920" height="1080" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>BOOGLIGAN</h3>
-                            <p class="work__role">Enemy Programmer</p>
-                            <p>An augmented reality game developed at CITM. Responsible for enemy programming.</p>
-                            <ul class="work__list">
-                                <li>Unity AR</li>
-                                <li>C#</li>
-                                <li>Enemy programming</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://github.com/SouthWest-Studios/South_AR_Project/releases/tag/1.0" target="_blank" rel="noopener noreferrer" class="link__text">
-                                    View on GitHub <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/boogligan.png" class="work__image" alt="BOOGLIGAN augmented reality game" width="800" height="600" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ***** Professional Experience ***** -->
-        <section class="experience" id="experience">
-            <div class="row">
-                <h2>Professional Experience</h2>
-                    <article class="work__box">
-                        <div class="work__text">
-                            <h3>SkillBack</h3>
-                            <p class="work__role">Programmer Intern · 6 months</p>
-                            <p>Worked on a mobile app where users play skill-based minigames to earn Smart Purchase Rights (DCI), redeemable at partner businesses. The platform helps restaurants and retailers attract customers and encourage repeat visits.</p>
-                            <ul class="work__list">
-                                <li>Mobile app</li>
-                                <li>Minigames</li>
-                                <li>Programming internship</li>
-                            </ul>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/skillback.png" class="work__image work__image--portrait" alt="SkillBack mobile app home screen with a fox avatar and minigame navigation" width="916" height="2048" loading="lazy" decoding="async" />
-                        </div>
-                    </article>
-            </div>
-        </section>
-
-        <!-- ***** About Me ***** -->
-        <section class="about" id="about">
-            <div class="row">
-                <h2>About Me</h2>
-                <div class="about__text">
-                    <p>
-                        I am a <strong>Video Game Design and Development graduate</strong> from the <strong>Centre de la Imatge i la Tecnologia Multimèdia (CITM) - Universitat Politècnica de Catalunya (UPC)</strong>, focused on game programming with <strong>Unity and C#</strong>.
-                        My experience includes a six-month programming internship at <strong>SkillBack</strong>, over a year developing <strong>Shodoe</strong> with a team of eight, and two mobile puzzle games published on Google Play as the sole programmer.
-                    </p>
-                    <p>
-                        I work with <strong>C#, C++, C, Lua, SDL, and object-oriented programming</strong>, with additional knowledge of <strong>Python, Maya, and ZBrush</strong>.
-                        I also have experience integrating <strong>in-app purchases, advertising, and rewarded ads</strong> in mobile games.
-                    </p>
-                    <a href="./CV.pdf" class="btn" download="Aleix_Botella_Llobet_CV.pdf">Download CV</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ***** Contact ***** -->
-        <section class="contact" id="contact">
-            <div class="row">
-                <h2>Contact</h2>
-                <div class="contact__info">
-                    <p>Do you want to collaborate on a project or get in touch with me? Feel free to write to me.</p>
-                    <a href="mailto:aleixbotella.1@gmail.com" class="btn">aleixbotella.1@gmail.com</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ***** Footer ***** -->
-    <footer role="contentinfo" class="footer">
-        <div class="row">
-            <ul class="footer__social-links">
-                <li class="footer__social-link-item"><a href="https://github.com/Aleix3" target="_blank" rel="noopener noreferrer"><img src="./images/github.svg" class="footer__social-image" alt="GitHub"></a></li>
-                <li class="footer__social-link-item"><a href="https://www.linkedin.com/in/aleix-botella-llobet/" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn"></a></li>
-            </ul>
-            <p>&copy; 2025 - Portfolio of Aleix Botella.</p>
-        </div>
-    </footer>
-
-    <a href="#top" class="back-to-top" title="Back to top">
-        <img src="./images/arrow-up.svg" alt="Back to top" class="back-to-top__image" />
-    </a>
-    <script src="./index.js"></script>
+    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="shell"><p class="eyebrow">04 / NEXT CHAPTER</p><div class="contact-layout"><h2 id="contact-title">Let’s make something<br /><em>playable.</em></h2><div class="contact-details"><p>Have a project in mind?<br />I’d love to hear about it.</p><a class="contact-email" href="mailto:aleixbotella.1@gmail.com">aleixbotella.1@gmail.com <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://github.com/Aleix3" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/aleix-botella-llobet/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div></div></section>
+  </main>
+  <footer class="footer shell"><a class="brand-mark" href="#top" aria-label="Back to top">ab<span>.</span></a><p>© <span id="year">2026</span> Aleix Botella Llobet</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
