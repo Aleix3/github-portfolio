@@ -489,7 +489,32 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+    min-width: 0;
     margin-bottom: var(--gutter-normal);
+}
+
+.work__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.work__image--portrait {
+    width: auto;
+    max-height: 58rem;
+    margin-inline: auto;
+}
+
+.work__role {
+    color: var(--white);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+}
+
+@media(max-width: 500px) {
+    .work__image--portrait {
+        max-height: 50rem;
+    }
 }
 
 @media(min-width: 901px) {
